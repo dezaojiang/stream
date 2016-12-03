@@ -1,0 +1,8 @@
+;FFMETADATA1
+extra_metadata_1=extra_metadata_1
+extra_metadata_2=extra_metadata_2
+extra_metadata_3=extra_metadata_3
+extra_metadata_4=extra_metadata_4
+extra_metadata_5=extra_metadata_5
+extra_metadata_6=extra_metadata_6
+extra_metadata_7=extra_metadata_7
