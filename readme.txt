@@ -6,6 +6,14 @@ play.exe is used for downstreaming playback and human observation
 pull.py/push.py works much worse on widows than it does on linux due to windows' poor management of child-processes and stderr/stdout redirection, therefore highly recommend runing pull.py/push.py on linux
 before runing pull.py/push.py on windows, please turn off "Windows Error Reporting" in case of jamming ffmpeg/ffprob.exe from exit, or by simply double-clicking dontshowui.reg to disable that reporting
 
+[step]
+1. extract multi-volume-zip ffmpeg/mp4.mp4
+2. edit case/live.ini
+3. run pull.py
+4. run push.py
+5. run play.exe if need be
+6. read log/live.log
+
 [system requirement]
 linux :             linux a64
 windows :           >= windows xp i386/a64
