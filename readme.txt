@@ -8,11 +8,11 @@ before runing pull.py/push.py on windows, please turn off "Windows Error Reporti
 
 [step]
 1. extract multi-volume-zip ffmpeg/mp4.mp4
-2. edit case/live.ini
+2. edit case/stream.ini
 3. run pull.py
 4. run push.py
 5. run play.exe if need be
-6. read log/live.log
+6. read log/stream.log
 
 [system requirement]
 linux :             linux a64
@@ -30,9 +30,9 @@ python :            >= python 2.7.1; linux a64, windows i386/a64
 -pullserverport :   required; legal range: 49152-65535
 -talkpair :         required
 -pullserverip :     optional; will connect to 127.0.0.1 if not passed
--logrefer :         optional; will rename log/live.log refer to talkpair
+-logrefer :         optional; will rename log/stream.log refer to talkpair
 
-[case/live.ini]
+[case/stream.ini]
 casename :          unique casename                                     #each casename must be unique
 rtmppushsupport :   true                                                #default is true; legal range: true, false
 rtmppushurl :       rtmp://rtmppuh.host.domain.com/app/stream           #must in the form of rtmp://......., after urlencode
@@ -52,27 +52,27 @@ audiobitrate :      64000                                               #default
 audiosamplerate :   44100                                               #default is 44100; legal range: 44100, 22050
 audiochannel :      2                                                   #default is 2; legal range: 2, 1
 
-[log/live.log]
+[log/stream.log]
 casetime :          string                                              #case start time string
-casename :          string                                              #casename frome case/live.ini
-rtmppuhspt :        True|False                                          #rtmppushsupport from case/live.ini
-rtmppuhurl :        string                                              #rtmppushurl from case/live.ini
-rtmppulspt :        True|False                                          #rtmppullsupport from case/live.ini
-rtmppulurl :        string                                              #rtmppullurl from case/live.ini
-hdlpulspt :         True|False                                          #hdlpullsupport from case/live.ini
-hdlpulurl :         string                                              #hdlpullurl from case/live.ini
-hlspulspt :         True|False                                          #hlspullsupport from case/live.ini
-hlspulurl :         string                                              #hlspullurl from case/live.ini
+casename :          string                                              #casename frome case/stream.ini
+rtmppuhspt :        True|False                                          #rtmppushsupport from case/stream.ini
+rtmppuhurl :        string                                              #rtmppushurl from case/stream.ini
+rtmppulspt :        True|False                                          #rtmppullsupport from case/stream.ini
+rtmppulurl :        string                                              #rtmppullurl from case/stream.ini
+hdlpulspt :         True|False                                          #hdlpullsupport from case/stream.ini
+hdlpulurl :         string                                              #hdlpullurl from case/stream.ini
+hlspulspt :         True|False                                          #hlspullsupport from case/stream.ini
+hlspulurl :         string                                              #hlspullurl from case/stream.ini
 rtmppuhmta :        json                                                #rtmp push metadata from ffmpeg/metadata.txt
-rtmppuhfmtctn :     string                                              #rtmp push formatcontainer from case/live.ini
-rtmppuhvcdc :       string                                              #rtmp push videocodec from case/live.ini
-rtmppuhvbrte :      float                                               #rtmp push videiobitrate from case/live.ini
-rtmppuhvfrmrte :    float                                               #rtmp push videoframerate from case/live.ini
-rtmppuhvres :       int x int                                           #rtmp push videoresolution from case/live.ini
-rtmppuhacdc :       string                                              #rtmp push audiocodec from case/live.ini
-rtmppuhabrte :      float                                               #rtmp push audiobitrate from case/live.ini
-rtmppuhasplrte :    float                                               #rtmp push audiosamplerate from case/live.ini
-rtmppuhachn :       float                                               #rtmp push audiochannel from case/live.ini
+rtmppuhfmtctn :     string                                              #rtmp push formatcontainer from case/stream.ini
+rtmppuhvcdc :       string                                              #rtmp push videocodec from case/stream.ini
+rtmppuhvbrte :      float                                               #rtmp push videiobitrate from case/stream.ini
+rtmppuhvfrmrte :    float                                               #rtmp push videoframerate from case/stream.ini
+rtmppuhvres :       int x int                                           #rtmp push videoresolution from case/stream.ini
+rtmppuhacdc :       string                                              #rtmp push audiocodec from case/stream.ini
+rtmppuhabrte :      float                                               #rtmp push audiobitrate from case/stream.ini
+rtmppuhasplrte :    float                                               #rtmp push audiosamplerate from case/stream.ini
+rtmppuhachn :       float                                               #rtmp push audiochannel from case/stream.ini
 rtmppuhdrt :        float                                               #rtmp push duration
 rtmppuhvfld :       float|UNDEFINED                                     #rtmp push video first screen timestamp
 rtmppuhafld :       float|UNDEFINED                                     #rtmp push audio first screen timestamp

@@ -959,7 +959,7 @@ def main():
         print 'please pass -pullservport 49152-65535'
         return
 
-    casefile = open('case/live.ini')
+    casefile = open('case/stream.ini')
     casedict = collections.OrderedDict()
     casename = None
     casenamedict = collections.OrderedDict()

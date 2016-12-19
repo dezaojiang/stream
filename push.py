@@ -123,14 +123,14 @@ def main():
         return
 
     if logrefer is not None and logrefer.lower() == 'true':
-        logname = ''.join(['log/live_', talkpair, '.log'])
+        logname = ''.join(['log/stream_', talkpair, '.log'])
     else:
-        logname = 'log/live.log'
+        logname = 'log/stream.log'
 
     casedict = collections.OrderedDict()
     casedict['casename'] = None
 
-    casefile = open('case/live.ini')
+    casefile = open('case/stream.ini')
     logfile = open(logname, mode = 'w+', buffering = 0)
 
     talkhead = dict()
